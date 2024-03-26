@@ -1,4 +1,4 @@
-<template style="height: 100%;">
+<template class="h-screen">
   <div id="app">
     <Nav />
     <main>
@@ -14,11 +14,20 @@ export default {};
 </script>
 
 <style>
- /* Estilo para todos los elementos padres hasta el html y el body */
- html, body, #__nuxt, #__layout, [data-v-inspector="app.vue"], #app, main {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      background: red;
-    }
+/* Estilo para todos los elementos padres hasta el html y el body */
+html,
+body,
+[data-v-inspector="app.vue:2:3"],
+#app,
+main {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#__nuxt {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 </style>
